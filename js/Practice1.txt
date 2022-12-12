@@ -1,0 +1,65 @@
+Final Test Prcatice -1
+
+(1). What is copy constructor?
+
+Ans: Copy Constructor means that it is a function which uses another object from the same class to initialize an object. In other words, it initialize a new object by copying it from the previous object which belongs to the same class.
+
+(2). When do we use  shallow copy and when we use deep copy?
+
+Ans: When we want to keep the same value in two different types of codes then we use the shallow copy as it will create the same copy of the oroginal value into another code. Talking about deep copy, it means that creating a new object whose properties are completely different from the copied objects which are copied from the original file.
+
+(3). Why does the copy assignment operator check for self-assignment before doing anything else?
+
+Ans: Self-assignment is done in order to avoid the errors in the code because there are many copied data from the original file. For  example we have an object d1 of tyoe array and if we write d1=d1, the program won't run and will show  errors and in order to avoid that issue, self-assignment is necessary.
+
+(4). What does protected access modifier means here in the following code when base class is inherited publicly by derived class.  
+  // base class
+class Parent
+{   
+ protected:
+    int id_protected;
+ };
+// derived class
+class Child : public Parent
+{
+public:
+        void setId(int id) {
+          {
+            id_protected = id;       
+           }
+    };
+
+Ans: Protected access modifier is a keyword that examine the data of the class from both inside and outside the package. If the default access specifier in it base specifier is private then protected access modifier will access the data from inside package but if it is public then it will access the data from the outside package.
+
+(5). How are protected member of a base class accessed in the derived class when inherited privately?
+
+Ans: Protected members  of a base class are similar to the private members and they both cannot be accessed from the outside package but can be accessed through derived class which have protected access modifier. 
+
+(6). Different types of polymorphism.
+
+Ans: There are many types of polymorphism: 
+(a). Subtype polymorphism: it is used to derived classes from base class pointers.
+
+(b). Parametric polymorphism: in this type of polymorphism the functionsare derived using various type of templates.
+
+(c). Ad hoc polymorphism: this allows function with same name to function but to act differently for every type.
+
+(d). Coercion polymorphism: this  allows an object to cast into other type. Coercion polymorphism is also called as Casting because of how it works. 
+
+(7). How can a class can access the private data members  of another         class?
+
+Ans: A class can access the rpivate  data members of another class  by using a function called Virtual. It is a member function whivh is declared into a base class only and is also re-defined by a derived class which makes it more easy to access the private data from other class.
+
+(8). What is friend function?
+
+Ans: A friend function is a type of function that can access the members from all type of class  i.e., private, public and protected. This function is declared using friend keyword inside the body of the class. 
+
+(9). Does C++ compiler create default constructor when we write our own?
+
+Ans: No
+
+(10).
+
+
+ 
+
